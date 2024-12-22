@@ -1,0 +1,16 @@
+.mainvisual{
+    max-width: 100%;
+    max-height: 100%;
+    width: auto;
+    height: auto;
+}
+
+.container{
+    display: flex;
+}
+
+.photo{
+    max-width: 100%;
+    width: 20%;
+    height: auto;
+}
