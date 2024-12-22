@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="ja">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width,initial-scale=1" />
+	<!-- TODO -->
+	<link rel="stylesheet" href="../css/bootstrap/bootstrap.min.css">
+	<title>2-1_grid.html</title>
+</head>
+<body>
+	<div class="container">
+		<h2>コンテンツ１</h2>
+		<h3>1行目</h3>
+		<div class="row">
+			<div class="col">1行目1列目</div>
+			<div class="col">1行目2列目</div>
+			<div class="col">1行目3列目</div>
+		</div>
+		<h3>２行目</h3>
+		<div class="row">
+			<div class="col-8">2行目1列目</div>
+			<div class="col-4">2行目2列目</div>
+		</div>
+		<h2>コンテンツ２</h2>
+		<h3>1行目</h3>
+		<div class="row">
+			<div class="col-md-2">1行目1列目</div>
+			<div class="col-md-2">2行目2列目</div>
+			<div class="col-md-2">3行目3列目</div>
+			<div class="col-md-6">4行目4列目</div>
+		</div>
+	</div>
+	<!-- TODO -->
+	<!-- TODO -->
+	<script src="../js/common/jquery-3.6.0.min.js"></script>
+	<script src="../js/bootstrap/bootstrap.min.js"></script>
+
+	<script>
+		$(function () {
+			$(".row div:nth-of-type(1)").css("background", "red");
+			$(".row div:nth-of-type(2)").css("background", "yellow");
+			$(".row div:nth-of-type(3)").css("background", "blue");
+			$(".row div:nth-of-type(4)").css("background", "green");
+		})
+	</script>
+</body>
+
+</html>

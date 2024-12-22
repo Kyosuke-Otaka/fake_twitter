@@ -1,0 +1,32 @@
+<!doctype html>
+<html>
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>8-3_add-event</title>
+<style>
+    .delete{
+        cursor: pointer;
+    }
+</style>
+</head>
+<body>
+    <h1>様々なイベント制御</h1>
+    <h2>追加された要素に対してイベントを設定する</h2>
+    <div class="message">
+        <ul>
+            <li>メッセージ<img src="trash.svg" class="delete"></li>
+            <li>メッセージ<img src="trash.svg" class="delete"></li>
+
+        </ul>
+    </div>
+    <button>追加</button>
+    <script src="../js/common/jquery-3.6.0.min.js"></script>
+    <script src="add-event.js"></script>
+    <script>
+        $('button').on('click',function(){
+            $('ul').append('<li>メッセージ<img src="trash.svg" class="delete"></li>');
+        });
+    </script>
+</body>
+</html>
